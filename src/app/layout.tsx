@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "ZERO LIVE — Luxury Short Video & Live Streaming",
+  description: "The world's most exclusive short video and live streaming platform. Black & Gold luxury experience.",
+  keywords: ["short video", "live streaming", "luxury", "zero live"],
 };
 
 export default function RootLayout({
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ background: "#000", color: "#fff", overflowX: "hidden" }}
       >
         {children}
       </body>
