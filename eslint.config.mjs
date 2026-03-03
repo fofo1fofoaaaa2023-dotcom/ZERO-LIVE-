@@ -1,10 +1,7 @@
-import nextConfig from "eslint-config-next";
+import type { NextConfig } from "next";
 
-const eslintConfig = [
-  ...nextConfig,
-  {
-    ignores: ["node_modules/**"],
-  },
-];
+const nextConfig: NextConfig = {
+  output: "export"
+};
 
-export default eslintConfig;
+export default nextConfig;
